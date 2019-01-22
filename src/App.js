@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
+import Image from './components/Image';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header siteName="Instagram" />
+        <Image
+          src="https://img.huffingtonpost.com/asset/587d498a1700002e00fdef27.jpeg?ops=scalefit_600_noupscale"
+          height={901}
+          width={600}
+        />
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
