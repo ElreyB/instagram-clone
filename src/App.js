@@ -29,6 +29,9 @@ class App extends Component {
         <MainWrapper>
           <InstaCardsContainer>
             <InstaCard />
+            <InstaCard />
+            <InstaCard />
+            <InstaCard />
           </InstaCardsContainer>
         </MainWrapper>
       </ContentWrapper>

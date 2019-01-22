@@ -11,6 +11,7 @@ const CardWrapper = styled.div`
   width: 616px:
   height: 917px;
   border-radius: 6px;
+  margin-bottom: 60px;
 `;
 
 const CardHeader = styled.div`
