@@ -10,6 +10,7 @@ const ImageWrapper = styled.div`
 const ImageContainer = styled.img`
   height: 100%;
   width: 100%;
+  border-radius: ${props => props.radius};
 `;
 
 class Image extends Component {
@@ -17,10 +18,10 @@ class Image extends Component {
     super(props);
   }
   render() {
-    const { height, width, alt, src } = this.props;
+    const { height, width, alt, src, radius } = this.props;
     return (
       <ImageWrapper height={height} width={width}>
-        <ImageContainer src={src} alt={alt} />
+        <ImageContainer src={src} alt={alt} radius={radius} />
       </ImageWrapper>
     );
   }
