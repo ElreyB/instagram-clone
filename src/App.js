@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import Image from './components/Image';
 import InstaCard from './components/InstaCard';
+import UserHeader from './components/UserHeader';
+import InstaStories from './components/InstaStories';
 
 const ContentWrapper = styled.div`
   margin: 0;
@@ -19,6 +21,14 @@ const MainWrapper = styled.section`
 const InstaCardsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 27px;
+  border: 2px solid red;
+`;
+const UserInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 293px;
+  border: 2px solid blue;
 `;
 
 class App extends Component {
@@ -30,9 +40,11 @@ class App extends Component {
           <InstaCardsContainer>
             <InstaCard />
             <InstaCard />
-            <InstaCard />
-            <InstaCard />
           </InstaCardsContainer>
+          <UserInfoContainer>
+            <UserHeader />
+            <InstaStories />
+          </UserInfoContainer>
         </MainWrapper>
       </ContentWrapper>
     );
