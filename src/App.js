@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
+import { device } from './breakpoints';
 import Header from './components/Header';
 import Image from './components/Image';
 import InstaCard from './components/InstaCard';
@@ -13,9 +14,19 @@ const ContentWrapper = styled.div`
 const MainWrapper = styled.section`
   display: flex;
   flex-flow: row nowrap;
-  max-width: 935px;
-  margin: 0 165px;
+  width: 935px;
+  margin: 0;
   padding-top: 137px;
+
+  mobile tablet
+  @media ${device.tablet} {
+    margin: 0 120px;
+  }
+
+  //desktop
+  @media ${device.laptop} {
+    margin: 0 480px;
+  }
 `;
 
 const InstaCardsContainer = styled.div`
@@ -29,6 +40,10 @@ const UserInfoContainer = styled.div`
   flex-direction: column;
   width: 293px;
   border: 2px solid blue;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 class App extends Component {
